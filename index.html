@@ -10,9 +10,9 @@
 <body class="bg-gray-50 text-gray-900 scroll-smooth">
   <!-- Navbar -->
   <header class="fixed w-full bg-white shadow z-50">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <div class="text-2xl font-bold">mohamed masod abozed</div>
-      <ul class="flex space-x-6">
+    <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-6">
+      <div class="text-2xl md:text-2xl font-bold mb-2 md:mb-0">mohamed masod abozed</div>
+      <ul class="hidden md:flex flex-row space-x-6 w-full md:w-auto items-center">
         <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
         <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
         <li><a href="#expertise" class="hover:text-blue-600 transition">Expertise</a></li>
@@ -24,85 +24,85 @@
   </header>
 
   <!-- Home Section -->
-  <section id="home" class="pt-32 pb-16 flex flex-col items-center bg-gradient-to-b from-blue-100 to-white">
-    <img src="DSC002711.JPG" alt="Profile Photo" class="w-32 h-32 rounded-full shadow-lg mb-4">
-    <h1 class="text-4xl font-extrabold mb-2">mohamed masod abozed</h1>
-    <h2 class="text-xl text-blue-600 font-semibold mb-4">Software Engineer & AI Enthusiast</h2>
-    <p class="max-w-xl text-center text-gray-600">Building modern web applications and exploring the world of artificial intelligence.</p>
-    <a href="resume.pdf" download class="mt-6 px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">Download Resume</a>
+  <section id="home" class="pt-32 pb-10 flex flex-col items-center bg-gradient-to-b from-blue-100 to-white px-4">
+    <img src="DSC002711.JPG" alt="Profile Photo" class="w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg mb-4 object-cover">
+    <h1 class="text-2xl md:text-4xl font-extrabold mb-2 text-center">mohamed masod abozed</h1>
+    <h2 class="text-lg md:text-xl text-blue-600 font-semibold mb-4 text-center">Software Engineer & AI Enthusiast</h2>
+    <p class="max-w-xl text-center text-gray-600 text-base md:text-lg">Building modern web applications and exploring the world of artificial intelligence.</p>
+    <a href="resume.pdf" download class="mt-6 px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition w-full max-w-xs text-center">Download Resume</a>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+  <section id="skills" class="py-10 bg-white px-4">
+    <div class="container mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Skills</h2>
       <div class="flex flex-wrap justify-center gap-6">
-        <div class="flex flex-col items-center">
-          <span class="text-5xl">💻</span>
-          <span class="mt-2 font-semibold">C#</span>
+        <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
+          <span class="text-3xl md:text-5xl">💻</span>
+          <span class="mt-2 font-semibold text-sm md:text-base">C#</span>
         </div>
-        <div class="flex flex-col items-center">
-          <span class="text-5xl">🐍</span>
-          <span class="mt-2 font-semibold">Python</span>
+        <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
+          <span class="text-3xl md:text-5xl">🐍</span>
+          <span class="mt-2 font-semibold text-sm md:text-base">Python</span>
         </div>
-        <div class="flex flex-col items-center">
-          <span class="text-5xl">🗄️</span>
-          <span class="mt-2 font-semibold">SQL</span>
+        <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
+          <span class="text-3xl md:text-5xl">🗄️</span>
+          <span class="mt-2 font-semibold text-sm md:text-base">SQL</span>
         </div>
-        <div class="flex flex-col items-center">
-          <span class="text-5xl">⚡</span>
-          <span class="mt-2 font-semibold">JavaScript</span>
+        <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
+          <span class="text-3xl md:text-5xl">⚡</span>
+          <span class="mt-2 font-semibold text-sm md:text-base">JavaScript</span>
         </div>
-        <div class="flex flex-col items-center">
-          <span class="text-5xl">🌐</span>
-          <span class="mt-2 font-semibold">HTML/CSS</span>
+        <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
+          <span class="text-3xl md:text-5xl">🌐</span>
+          <span class="mt-2 font-semibold text-sm md:text-base">HTML/CSS</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Expertise Section -->
-  <section id="expertise" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-center">What I Do</h2>
-      <div class="grid md:grid-cols-3 gap-8">
+  <section id="expertise" class="py-10 bg-gray-100 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">What I Do</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white p-6 rounded shadow text-center">
-          <span class="text-4xl mb-2 inline-block">🌍</span>
-          <h3 class="font-semibold text-xl mb-2">Web Development</h3>
-          <p>Building responsive, modern web applications with clean code and great UX.</p>
+          <span class="text-3xl md:text-4xl mb-2 inline-block">🌍</span>
+          <h3 class="font-semibold text-lg md:text-xl mb-2">Web Development</h3>
+          <p class="text-sm md:text-base">Building responsive, modern web applications with clean code and great UX.</p>
         </div>
         <div class="bg-white p-6 rounded shadow text-center">
-          <span class="text-4xl mb-2 inline-block">🤖</span>
-          <h3 class="font-semibold text-xl mb-2">Machine Learning</h3>
-          <p>Designing and training models for data-driven solutions and intelligent systems.</p>
+          <span class="text-3xl md:text-4xl mb-2 inline-block">🤖</span>
+          <h3 class="font-semibold text-lg md:text-xl mb-2">Machine Learning</h3>
+          <p class="text-sm md:text-base">Designing and training models for data-driven solutions and intelligent systems.</p>
         </div>
         <div class="bg-white p-6 rounded shadow text-center">
-          <span class="text-4xl mb-2 inline-block">🗃️</span>
-          <h3 class="font-semibold text-xl mb-2">Databases & APIs</h3>
-          <p>Designing robust databases and building RESTful APIs for scalable applications.</p>
+          <span class="text-3xl md:text-4xl mb-2 inline-block">🗃️</span>
+          <h3 class="font-semibold text-lg md:text-xl mb-2">Databases & APIs</h3>
+          <p class="text-sm md:text-base">Designing robust databases and building RESTful APIs for scalable applications.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8">
+  <section id="projects" class="py-10 bg-white px-4">
+    <div class="container mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Project 1 -->
         <div class="bg-gray-50 p-6 rounded shadow">
-          <h3 class="font-semibold text-xl mb-2">Job Finder website</h3>
-          <p class="mb-2">A job finder website that allows users to search for jobs and apply to them and it is directed to help people with disabilities, built with Python and Django.</p>
-          <div class="mb-2 text-sm text-gray-600">Technologies: Python, js, Django</div>
+          <h3 class="font-semibold text-lg md:text-xl mb-2">Job Finder website</h3>
+          <p class="mb-2 text-sm md:text-base">A job finder website that allows users to search for jobs and apply to them and it is directed to help people with disabilities, built with Python and Django.</p>
+          <div class="mb-2 text-xs md:text-sm text-gray-600">Technologies: Python, js, Django</div>
           <a href="https://github.com/MohamedElsadany56/JobFinder" class="text-blue-600 hover:underline mr-4">GitHub</a>
           <a href="#" class="text-blue-600 hover:underline">Demo</a>
         </div>
         <!-- Project 2 -->
         <div class="bg-gray-50 p-6 rounded shadow">
-          <h3 class="font-semibold text-xl mb-2">Portfolio Website</h3>
-          <p class="mb-2">A personal portfolio website to showcase my work and skills, built with React and Tailwind CSS.</p>
-          <div class="mb-2 text-sm text-gray-600">Technologies: React, Tailwind CSS</div>
+          <h3 class="font-semibold text-lg md:text-xl mb-2">Portfolio Website</h3>
+          <p class="mb-2 text-sm md:text-base">A personal portfolio website to showcase my work and skills, built with React and Tailwind CSS.</p>
+          <div class="mb-2 text-xs md:text-sm text-gray-600">Technologies: React, Tailwind CSS</div>
           <a href="https://github.com/mohamedmasodabozed/Portfolio-" class="text-blue-600 hover:underline mr-4">GitHub</a>
           <a href="https://mohamedmasodabozed.github.io/Portfolio-/#" class="text-blue-600 hover:underline">Demo</a>
         </div>
@@ -110,27 +110,25 @@
     </div>
   </section>
 
-  
-
   <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6 max-w-2xl">
-      <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-      <p class="text-lg text-center">I'm mohamed masod abozed, a passionate software engineer with a background in computer science. I love building impactful software, learning new technologies, and solving real-world problems. My interests include web development, AI, and open-source projects.</p>
+  <section id="about" class="py-10 bg-gray-100 px-4">
+    <div class="container mx-auto max-w-2xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">About Me</h2>
+      <p class="text-base md:text-lg text-center">I'm mohamed masod abozed, a passionate software engineer with a background in computer science. I love building impactful software, learning new technologies, and solving real-world problems. My interests include web development, AI, and open-source projects.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="container mx-auto px-6 max-w-xl">
-      <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+  <section id="contact" class="py-10 bg-white px-4">
+    <div class="container mx-auto max-w-xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Contact Me</h2>
       <form class="space-y-4" id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
-        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
-        <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded" rows="5" required></textarea>
-        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition">Send Message</button>
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded text-sm md:text-base" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded text-sm md:text-base" required>
+        <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded text-sm md:text-base" rows="5" required></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition text-sm md:text-base">Send Message</button>
       </form>
-      <div class="flex justify-center space-x-6 mt-8">
+      <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
         <a href="mailto:mohamedmasodabozed@email.com" class="text-gray-600 hover:text-blue-600 text-2xl" title="Email"><svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 inline"><path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zm16 2.236l-7.071 7.071a1 1 0 01-1.414 0L4 6.236V20h16V6.236z"/></svg></a>
         <a href="https://www.linkedin.com/in/mohamed-masod-abozed-3591842a5/" target="_blank" class="text-gray-600 hover:text-blue-600 text-2xl" title="LinkedIn"><svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 inline"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/></svg></a>
         <a href="https://github.com/mohamedmasodabozed" target="_blank" class="text-gray-600 hover:text-blue-600 text-2xl" title="GitHub"><svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 inline"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.263.82-.582 0-.288-.012-1.243-.018-2.25-3.338.726-4.042-1.415-4.042-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.003-.404 1.018.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.625-5.475 5.921.43.372.823 1.104.823 2.225 0 1.606-.015 2.898-.015 3.293 0 .322.216.699.825.58C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
@@ -138,7 +136,7 @@
     </div>
   </section>
 
-  <footer class="py-6 text-center text-gray-500 bg-gray-50 mt-8">
+  <footer class="py-6 text-center text-gray-500 bg-gray-50 mt-8 text-sm md:text-base">
     &copy; 2024 mohamed masod abozed. All rights reserved.
   </footer>
 
