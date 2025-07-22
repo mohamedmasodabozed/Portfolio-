@@ -1,0 +1,17 @@
+/* Custom fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Optional: Enhance navbar shadow on scroll (if needed by JS) */
+.navbar-scrolled {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
