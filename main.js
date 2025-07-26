@@ -79,10 +79,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   // Send email using EmailJS
   console.log('Sending email with data:', data);
   emailjs.send('service_8y6vzwh', 'template_nl97aub', {
-    to_name: 'mohamed masod abozed',
     from_name: data.name,
     from_email: data.email,
-    subject: data.subject,
+    reply_to: data.email,
+    bcc: '',
+    cc: '',
     message: data.message
   })
   .then(function(response) {
