@@ -78,6 +78,15 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   
   // Send email using EmailJS
   console.log('Sending email with data:', data);
+  console.log('Template variables being sent:', {
+    from_name: data.name,
+    from_email: data.email,
+    reply_to: data.email,
+    bcc: '',
+    cc: '',
+    message: data.message
+  });
+  
   emailjs.send('service_8y6vzwh', 'template_nl97aub', {
     from_name: data.name,
     from_email: data.email,
