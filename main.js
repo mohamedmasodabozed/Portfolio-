@@ -77,9 +77,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   hideMessage();
   
   // Send email using EmailJS
+  console.log('Sending email with data:', data);
   emailjs.send('service_8y6vzwh', 'template_nl97aub', {
-    name: data.name,
-    email: data.email,
+    to_name: 'mohamed masod abozed',
+    from_name: data.name,
+    from_email: data.email,
     subject: data.subject,
     message: data.message
   })
