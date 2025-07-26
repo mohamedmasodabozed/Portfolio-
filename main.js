@@ -40,17 +40,6 @@ window.addEventListener('scroll', () => {
 // Initialize EmailJS
 emailjs.init("BYaldzwRTdyBMayar");
 
-// Check if we're on localhost or GitHub Pages
-const isLocalhost = window.location.hostname === 'localhost' || 
-                   window.location.hostname === '127.0.0.1' || 
-                   window.location.hostname === '';
-
-const isGitHubPages = window.location.hostname.includes('github.io');
-
-console.log('Current hostname:', window.location.hostname);
-console.log('Is localhost:', isLocalhost);
-console.log('Is GitHub Pages:', isGitHubPages);
-
 // Contact form handling
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -87,21 +76,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   submitLoading.classList.remove('hidden');
   hideMessage();
   
-  // If on localhost, show demo message
-  if (isLocalhost) {
-    console.log('Local testing - EmailJS data:', data);
-    setTimeout(() => {
-      showMessage('Demo mode: Email would be sent with data: ' + JSON.stringify(data, null, 2), 'success');
-      form.reset();
-      submitBtn.disabled = false;
-      submitText.classList.remove('hidden');
-      submitLoading.classList.add('hidden');
-    }, 2000);
-    return;
-  }
-  
-  // Send email using EmailJS (on live site)
-  console.log('Sending email via EmailJS...');
+  // Send email using EmailJS
   emailjs.send('service_8y6vzwh', 'template_nl97aub', {
     name: data.name,
     email: data.email,
