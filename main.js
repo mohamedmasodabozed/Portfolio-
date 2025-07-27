@@ -97,6 +97,19 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   })
   .then(function(response) {
     console.log('SUCCESS!', response.status, response.text);
+    
+    // Send auto-reply to the sender
+    emailjs.send('service_8y6vzwh', 'template_7xgtii6', {
+      from_name: data.name,
+      from_email: data.email
+    })
+    .then(function(autoReplyResponse) {
+      console.log('Auto-reply sent successfully!', autoReplyResponse.status);
+    })
+    .catch(function(autoReplyError) {
+      console.log('Auto-reply failed:', autoReplyError);
+    });
+    
     showMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
     form.reset();
   })
