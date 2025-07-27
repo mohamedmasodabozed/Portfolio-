@@ -82,6 +82,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     from_name: data.name,
     from_email: data.email,
     reply_to: data.email,
+    subject: data.subject,
     bcc: '',
     cc: '',
     message: data.message
@@ -91,6 +92,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     from_name: data.name,
     from_email: data.email,
     reply_to: data.email,
+    subject: data.subject,
     bcc: '',
     cc: '',
     message: data.message
