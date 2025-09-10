@@ -1,450 +1,943 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohamed Masod Abozed | Software Engineer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Added Google Fonts for modern typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <style>
-    /* Custom styles for enhanced design */
-    .font-playfair { font-family: 'Playfair Display', serif; }
-    .font-inter { font-family: 'Inter', sans-serif; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    .gradient-bg {
-      background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
-    }
-    
-    .card-hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .card-hover:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-    }
-    
-    .skill-card {
-      transition: all 0.3s ease;
-      background: linear-gradient(145deg, #ffffff, #f8fafc);
-    }
-    
-    .skill-card:hover {
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
-    }
-    
-    .hero-pattern {
-      background-image: radial-gradient(circle at 25px 25px, rgba(139, 92, 246, 0.1) 2px, transparent 0);
-      background-size: 50px 50px;
-    }
-    
-    .section-divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-    }
-  </style>
-</head>
-<body class="bg-background text-foreground font-inter scroll-smooth">
-  <!-- Navbar -->
-  <header class="w-full bg-background/95 backdrop-blur-sm shadow-sm z-50  top-0 border-b border-border">
-    <nav class="container mx-auto flex flex-row justify-between items-center py-4 px-4 md:px-6">
-      <!-- Enhanced logo with modern typography -->
-      <div class="text-2xl font-playfair font-bold text-primary tracking-tight">Mohamed Masod Abozed</div>
-      <ul class="hidden md:flex flex-row space-x-8 items-center">
-  <li><a href="#hero" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">Home</a></li>
-  <li><a href="#about" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">About</a></li>
-  <li><a href="#education" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">Education</a></li>
-  <li><a href="#experience" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">Experience</a></li>
-  <li><a href="#skills" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">Skills</a></li>
-  <li><a href="#projects" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">Projects</a></li>
-  <li><a href="#expertise" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">Services</a></li>
-  <li><a href="#contact" class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium">Contact</a></li>
-        <li>
-          <!-- Enhanced download button with modern styling -->
-          <a href="mohamed%20masod%20abozed%20-%20Fullstack%20developer%20Resume%20(1).pdf" download class="px-6 py-3 bg-accent text-accent-foreground rounded-xl shadow-lg hover:bg-accent/90 hover:shadow-xl transition-all duration-300 font-semibold flex items-center gap-2">
-            <i class="fa-solid fa-file-arrow-down"></i>
-            <span>Resume</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-    
-  <!-- Hero Section -->
-  <!-- Enhanced hero with gradient background and modern layout -->
-  <section id="hero" class="pt-20 pb-32 flex flex-col items-center gradient-bg hero-pattern px-4 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent"></div>
-    <div class="relative z-10 text-center max-w-4xl mx-auto">
-      <img src="DSC002711.JPG" alt="Profile Photo" class="w-40 h-40 md:w-48 md:h-48 rounded-full shadow-2xl mb-8 object-cover border-4 border-white mx-auto hover:scale-105 transition-transform duration-500 animate-float">
-      <h1 class="text-4xl md:text-6xl font-playfair font-bold mb-4 text-gray-800 tracking-tight leading-tight">Mohamed Masod Abozed</h1>
-      <!-- Fixed contrast by using text-gray-600 instead of text-muted -->
-      <h2 class="text-xl md:text-2xl text-gray-600 font-semibold mb-6">Fullstack Developer & AI Enthusiast</h2>
-      <!-- Fixed contrast by using text-gray-700 instead of text-card-foreground -->
-      <p class="max-w-2xl mx-auto text-center text-gray-700 text-lg md:text-xl mb-10 leading-relaxed">Delivering clean architecture, responsive design, and maintainable code for modern web solutions that drive business growth.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#projects" class="px-8 py-4 bg-purple-600 text-white rounded-xl shadow-lg hover:bg-purple-700 hover:shadow-xl transition-all duration-300 font-semibold text-lg">View My Work</a>
-        <a href="#contact" class="px-8 py-4 bg-white border-2 border-purple-600 text-purple-600 rounded-xl shadow-lg hover:bg-purple-600 hover:text-white transition-all duration-300 font-semibold text-lg">Contact Me</a>
+    <title>Mohamed Masod Abozed | Software Engineer Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added Google Fonts for modern typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/Profileimage.ico" />
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <style>
+      /* Custom styles for enhanced design */
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+      }
+
+      .card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      }
+
+      .skill-card {
+        transition: all 0.3s ease;
+        background: linear-gradient(145deg, #ffffff, #f8fafc);
+      }
+
+      .skill-card:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+      }
+
+      .hero-pattern {
+        background-image: radial-gradient(
+          circle at 25px 25px,
+          rgba(139, 92, 246, 0.1) 2px,
+          transparent 0
+        );
+        background-size: 50px 50px;
+      }
+
+      .section-divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+      }
+    </style>
+  </head>
+  <body class="bg-background text-foreground font-inter scroll-smooth">
+    <!-- Navbar -->
+    <header
+      class="w-full bg-background/95 backdrop-blur-sm shadow-sm z-50 top-0 border-b border-border"
+    >
+      <nav
+        class="container mx-auto flex flex-row justify-between items-center py-4 px-4 md:px-6"
+      >
+        <!-- Enhanced logo with modern typography -->
+        <div
+          class="text-2xl font-playfair font-bold text-primary tracking-tight"
+        >
+          Mohamed Masod Abozed
+        </div>
+        <ul class="hidden md:flex flex-row space-x-8 items-center">
+          <li>
+            <a
+              href="#hero"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#education"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#expertise"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="px-3 py-2 rounded-lg hover:bg-accent/10 hover:text-accent transition-all duration-300 font-medium"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <!-- Enhanced download button with modern styling -->
+            <a
+              href="mohamed%20masod%20abozed%20-%20Fullstack%20developer%20Resume%20(1).pdf"
+              download
+              class="px-6 py-3 bg-accent text-accent-foreground rounded-xl shadow-lg hover:bg-accent/90 hover:shadow-xl transition-all duration-300 font-semibold flex items-center gap-2"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Resume</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Enhanced hero with gradient background and modern layout -->
+    <section
+      id="hero"
+      class="pt-20 pb-32 flex flex-col items-center gradient-bg hero-pattern px-4 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent"
+      ></div>
+      <div class="relative z-10 text-center max-w-4xl mx-auto">
+        <img
+          src="DSC002711.JPG"
+          alt="Profile Photo"
+          class="w-40 h-40 md:w-48 md:h-48 rounded-full shadow-2xl mb-8 object-cover border-4 border-white mx-auto hover:scale-105 transition-transform duration-500 animate-float"
+        />
+        <h1
+          class="text-4xl md:text-6xl font-playfair font-bold mb-4 text-gray-800 tracking-tight leading-tight"
+        >
+          Mohamed Masod Abozed
+        </h1>
+        <!-- Fixed contrast by using text-gray-600 instead of text-muted -->
+        <h2 class="text-xl md:text-2xl text-gray-600 font-semibold mb-6">
+          Fullstack Developer & AI Enthusiast
+        </h2>
+        <!-- Fixed contrast by using text-gray-700 instead of text-card-foreground -->
+        <p
+          class="max-w-2xl mx-auto text-center text-gray-700 text-lg md:text-xl mb-10 leading-relaxed"
+        >
+          Delivering clean architecture, responsive design, and maintainable
+          code for modern web solutions that drive business growth.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#projects"
+            class="px-8 py-4 bg-purple-600 text-white rounded-xl shadow-lg hover:bg-purple-700 hover:shadow-xl transition-all duration-300 font-semibold text-lg"
+            >View My Work</a
+          >
+          <a
+            href="#contact"
+            class="px-8 py-4 bg-white border-2 border-purple-600 text-purple-600 rounded-xl shadow-lg hover:bg-purple-600 hover:text-white transition-all duration-300 font-semibold text-lg"
+            >Contact Me</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
     <!-- About Section -->
-  <!-- Enhanced about section with better typography and layout -->
-  <section id="about" class="py-16 bg-gray-50 px-4">
-    <div class="container mx-auto max-w-2xl">
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-center text-blue-700 tracking-wide">About Me</h2>
-      <p class="text-lg md:text-xl text-center text-gray-700 leading-relaxed">I'm <span class="font-bold text-blue-700">mohamed masod abozed</span>, a passionate software engineer with a solid background in computer science. I specialize in building impactful, high-performance software that helps businesses accelerate digital growth. My focus is on delivering fast, reliable, and future-ready applications—developed with clean architecture, responsiveness, and maintainability to ensure long-term success. Beyond just coding, I thrive on solving real-world problems and continuously learning new technologies to bring innovation and measurable value to every project.</p>
-    </div>
-  </section>
-  <!-- Education Section -->
-  <section id="education" class="py-16 bg-white px-4">
-    <div class="container mx-auto max-w-3xl">
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-center text-blue-700 tracking-wide">Education</h2>
-      <ol class="relative border-l border-blue-200 ml-4">
-        <li class="mb-10 ml-6">
-          <span class="absolute flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full -left-6 ring-4 ring-blue-100">
-            <img src="https://upload.wikimedia.org/wikipedia/ar/a/a2/Nile_University_logo.png" alt="Nile University" class="w-8 h-8 object-contain rounded-full">
-          </span>
-          <div class="bg-gray-50 rounded-xl shadow p-6 hover:shadow-lg transition card-hover">
-            <h3 class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"><i class="fa-solid fa-graduation-cap"></i> Bachelor's Degree in Computer Science</h3>
-            <p class="text-gray-700 mb-1">Nile University <span class="text-xs text-gray-500">(Currently in last year)</span></p>
-            <ul class="list-disc ml-5 text-gray-600 text-sm">
-              <li>Core curriculum in computer science and software engineering</li>
-              <li>Active member of research and tech clubs</li>
-            </ul>
-          </div>
-        </li>
-        <li class="mb-10 ml-6">
-          <span class="absolute flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full -left-6 ring-4 ring-blue-100">
-            <img src="data:image/jpeg;base64,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" alt="Scrimba" class="w-8 h-8 object-contain rounded-full">
-          </span>
-          <div class="bg-gray-50 rounded-xl shadow p-6 hover:shadow-lg transition card-hover">
-            <h3 class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"><i class="fa-brands fa-react"></i> React.js & Tailwind CSS Course</h3>
-            <p class="text-gray-700 mb-1">Scrimba <span class="text-xs text-gray-500">(Completed)</span></p>
-            <ul class="list-disc ml-5 text-gray-600 text-sm">
-              <li>Built multiple real-world projects with React.js and Tailwind CSS</li>
-              <li>Mastered component-based design and modern UI development</li>
-            </ul>
-          </div>
-        </li>
-        <li class="mb-10 ml-6">
-          <span class="absolute flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full -left-6 ring-4 ring-blue-100">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4wuzcHpKjkTgqdpZH7YUsDVQ9edGZhyIXbQ&s" alt="">
-          </span>
-          <div class="bg-gray-50 rounded-xl shadow p-6 hover:shadow-lg transition card-hover">
-            <h3 class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"><i class="fa-solid fa-laptop-code"></i> DEPI Trainee Program</h3>
-            <p class="text-gray-700 mb-1">DEPI <span class="text-xs text-gray-500">(Ongoing)</span></p>
-            <ul class="list-disc ml-5 text-gray-600 text-sm">
-              <li>Intensive hands-on training in fullstack web development and modern software engineering.</li>
-              <li>Focused modules on ASP.NET Core, HTML, CSS, JavaScript</li>
-              <li>Collaborated on real-world projects with industry mentors.</li>
-              <!-- <li>Developed scalable web applications and RESTful APIs using best practices.</li> -->
-              <li>Participated in workshops on agile methodologies, teamwork, and career development.</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- Work Experience Section -->
-  <section id="experience" class="py-16 bg-gray-50 px-4">
-    <div class="container mx-auto max-w-3xl">
-      <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-center text-blue-700 tracking-wide">Work Experience</h2>
-      <div class="grid grid-cols-1 gap-8">
-        <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4 hover:shadow-lg transition">
-          <img src="https://upload.wikimedia.org/wikipedia/ar/a/a2/Nile_University_logo.png" alt="CIS Nile University" class="w-16 h-16 object-contain rounded-full border border-blue-100">
-          <div>
-            <h3 class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"><i class="fa-solid fa-briefcase"></i> Junior Research Assistant</h3>
-            <p class="text-gray-700 mb-1">Center for Informatics Science (CIS), Nile University</p>
-            <p class="text-gray-500 text-sm mb-1">2024 – Present</p>
-            <ul class="list-disc ml-5 text-gray-600 text-sm">
-              <li>Assisted in research projects and data analysis</li>
-              <li>Developed web tools for research teams</li>
-              <li>Collaborated with faculty and students on innovative solutions</li>
-            </ul>
-          </div>
-        </div>
+    <!-- Enhanced about section with better typography and layout -->
+    <section id="about" class="py-16 bg-gray-50 px-4">
+      <div class="container mx-auto max-w-2xl">
+        <h2
+          class="text-3xl md:text-4xl font-extrabold mb-8 text-center text-blue-700 tracking-wide"
+        >
+          About Me
+        </h2>
+        <p class="text-lg md:text-xl text-center text-gray-700 leading-relaxed">
+          I'm <span class="font-bold text-blue-700">mohamed masod abozed</span>,
+          a passionate software engineer with a solid background in computer
+          science. I specialize in building impactful, high-performance software
+          that helps businesses accelerate digital growth. My focus is on
+          delivering fast, reliable, and future-ready applications—developed
+          with clean architecture, responsiveness, and maintainability to ensure
+          long-term success. Beyond just coding, I thrive on solving real-world
+          problems and continuously learning new technologies to bring
+          innovation and measurable value to every project.
+        </p>
       </div>
-    </div>
-  </section>
-  
-  <!-- Projects Section -->
-  <!-- Enhanced projects section with improved card design and layout -->
-  <section id="projects" class="py-20 bg-white px-4">
-    <div class="container mx-auto max-w-6xl">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Featured Projects</h2>
-        <div class="section-divider w-24 mx-auto mb-6"></div>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Here are some of my recent projects that showcase my skills and experience</p>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white px-4">
+      <div class="container mx-auto max-w-3xl">
+        <h2
+          class="text-3xl md:text-4xl font-extrabold mb-8 text-center text-blue-700 tracking-wide"
+        >
+          Education
+        </h2>
+        <ol class="relative border-l border-blue-200 ml-4">
+          <li class="mb-10 ml-6">
+            <span
+              class="absolute flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full -left-6 ring-4 ring-blue-100"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/ar/a/a2/Nile_University_logo.png"
+                alt="Nile University"
+                class="w-8 h-8 object-contain rounded-full"
+              />
+            </span>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 hover:shadow-lg transition card-hover"
+            >
+              <h3
+                class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-graduation-cap"></i> Bachelor's Degree in
+                Computer Science
+              </h3>
+              <p class="text-gray-700 mb-1">
+                Nile University
+                <span class="text-xs text-gray-500"
+                  >(Currently in last year)</span
+                >
+              </p>
+              <ul class="list-disc ml-5 text-gray-600 text-sm">
+                <li>
+                  Core curriculum in computer science and software engineering
+                </li>
+                <li>Active member of research and tech clubs</li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-10 ml-6">
+            <span
+              class="absolute flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full -left-6 ring-4 ring-blue-100"
+            >
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Scrimba"
+                class="w-8 h-8 object-contain rounded-full"
+              />
+            </span>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 hover:shadow-lg transition card-hover"
+            >
+              <h3
+                class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"
+              >
+                <i class="fa-brands fa-react"></i> React.js & Tailwind CSS
+                Course
+              </h3>
+              <p class="text-gray-700 mb-1">
+                Scrimba <span class="text-xs text-gray-500">(Completed)</span>
+              </p>
+              <ul class="list-disc ml-5 text-gray-600 text-sm">
+                <li>
+                  Built multiple real-world projects with React.js and Tailwind
+                  CSS
+                </li>
+                <li>
+                  Mastered component-based design and modern UI development
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-10 ml-6">
+            <span
+              class="absolute flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full -left-6 ring-4 ring-blue-100"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4wuzcHpKjkTgqdpZH7YUsDVQ9edGZhyIXbQ&s"
+                alt=""
+              />
+            </span>
+            <div
+              class="bg-gray-50 rounded-xl shadow p-6 hover:shadow-lg transition card-hover"
+            >
+              <h3
+                class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-laptop-code"></i> DEPI Trainee Program
+              </h3>
+              <p class="text-gray-700 mb-1">
+                DEPI <span class="text-xs text-gray-500">(Ongoing)</span>
+              </p>
+              <ul class="list-disc ml-5 text-gray-600 text-sm">
+                <li>
+                  Intensive hands-on training in fullstack web development and
+                  modern software engineering.
+                </li>
+                <li>Focused modules on ASP.NET Core, HTML, CSS, JavaScript</li>
+                <li>
+                  Collaborated on real-world projects with industry mentors.
+                </li>
+                <!-- <li>Developed scalable web applications and RESTful APIs using best practices.</li> -->
+                <li>
+                  Participated in workshops on agile methodologies, teamwork,
+                  and career development.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Project Card 1 -->
-        <div class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group">
-          <div class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56">
-            <img src="./images/Screenshot 2025-09-10 204923.png" alt="Job Finder Website Screenshot" class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="p-6">
-            <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">Job Finder Website</h3>
-            <p class="text-gray-700 mb-4 leading-relaxed">A comprehensive job finder platform designed specifically for people with disabilities, built with Python and Django framework.</p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Python</span>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">JavaScript</span>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Django</span>
-            </div>
-            <div class="flex gap-3">
-              <a href="https://github.com/MohamedElsadany56/JobFinder" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300">
-                <i class="fa-solid fa-code"></i> Code
-              </a>
-              <a href="https://elsadany.pythonanywhere.com/" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
+    </section>
 
-        <!-- Project Card 2 -->
-        <div class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group">
-          <div class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56">
-            <img src="images/Screenshot 2025-09-10 205008.png" alt="Portfolio Website Screenshot" class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="p-6">
-            <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">Portfolio Website</h3>
-            <p class="text-gray-700 mb-4 leading-relaxed">A personal portfolio website to showcase my work and skills, built with HTML and styled with Tailwind CSS.</p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">HTML</span>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Tailwind CSS</span>
-            </div>
-            <div class="flex gap-3">
-              <a href="https://github.com/mohamedmasodabozed/Portfolio-" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300">
-                <i class="fa-solid fa-code"></i> Code
-              </a>
-              <a href="https://mohamedmasodabozed.github.io/Portfolio-/#" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group">
-          <div class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56">
-            <img src="images/Screenshot 2025-08-20 202620.png" alt="Shop Verse Screenshot" class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="p-6">
-            <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">Shop Verse</h3>
-            <p class="text-gray-700 mb-4 leading-relaxed">A full-featured e-commerce platform for buying and selling products, built with modern web technologies.</p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">React</span>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Node.js</span>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Express</span>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">MongoDB</span>
-            </div>
-            <div class="flex gap-3">
-              <a href="https://github.com/mohamedmasodabozed/ShopVerse-" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300">
-                <i class="fa-solid fa-code"></i> Code
-              </a>
-              <a href="https://mohamedmasodabozed.github.io/Portfolio-/#" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Card 4 -->
-        <div class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group">
-          <div class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56">
-            <img src="./images/Screenshot 2025-09-10 213448.png" alt="Quiz App" class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="p-6">
-            <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">Quizzical</h3>
-            <p class="text-gray-700 mb-4 leading-relaxed">A Quiz trivia App built React.js and tailwind CSS.</p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">tailwind CSS</span>
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">React.js</span>
-            </div>
-            <div class="flex gap-3">
-              <a href="https://github.com/mohamedmasodabozed/Quizzical" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300">
-                <i class="fa-solid fa-code"></i> Code
-              </a>
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50 px-4">
+      <div class="container mx-auto max-w-3xl">
+        <h2
+          class="text-3xl md:text-4xl font-extrabold mb-8 text-center text-blue-700 tracking-wide"
+        >
+          Work Experience
+        </h2>
+        <div class="grid grid-cols-1 gap-8">
+          <div
+            class="bg-white rounded-xl shadow p-6 flex items-center gap-4 hover:shadow-lg transition"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/ar/a/a2/Nile_University_logo.png"
+              alt="CIS Nile University"
+              class="w-16 h-16 object-contain rounded-full border border-blue-100"
+            />
+            <div>
+              <h3
+                class="font-bold text-lg text-blue-700 mb-1 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-briefcase"></i> Junior Research Assistant
+              </h3>
+              <p class="text-gray-700 mb-1">
+                Center for Informatics Science (CIS), Nile University
+              </p>
+              <p class="text-gray-500 text-sm mb-1">2024 – Present</p>
+              <ul class="list-disc ml-5 text-gray-600 text-sm">
+                <li>Assisted in research projects and data analysis</li>
+                <li>Developed web tools for research teams</li>
+                <li>
+                  Collaborated with faculty and students on innovative solutions
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Enhanced projects section with improved card design and layout -->
+    <section id="projects" class="py-20 bg-white px-4">
+      <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800"
+          >
+            Featured Projects
+          </h2>
+          <div class="section-divider w-24 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Here are some of my recent projects that showcase my skills and
+            experience
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group"
+          >
+            <div
+              class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56"
+            >
+              <img
+                src="./images/Screenshot 2025-09-10 204923.png"
+                alt="Job Finder Website Screenshot"
+                class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">
+                Job Finder Website
+              </h3>
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                A comprehensive job finder platform designed specifically for
+                people with disabilities, built with Python and Django
+                framework.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >Python</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >Django</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/MohamedElsadany56/JobFinder"
+                  class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300"
+                >
+                  <i class="fa-solid fa-code"></i> Code
+                </a>
+                <a
+                  href="https://elsadany.pythonanywhere.com/"
+                  class="flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group"
+          >
+            <div
+              class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56"
+            >
+              <img
+                src="images/Screenshot 2025-09-10 205008.png"
+                alt="Portfolio Website Screenshot"
+                class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">
+                Portfolio Website
+              </h3>
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                A personal portfolio website to showcase my work and skills,
+                built with HTML and styled with Tailwind CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >HTML</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >Tailwind CSS</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/mohamedmasodabozed/Portfolio-"
+                  class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300"
+                >
+                  <i class="fa-solid fa-code"></i> Code
+                </a>
+                <a
+                  href="https://mohamedmasodabozed.github.io/Portfolio-/#"
+                  class="flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group"
+          >
+            <div
+              class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56"
+            >
+              <img
+                src="images/Screenshot 2025-08-20 202620.png"
+                alt="Shop Verse Screenshot"
+                class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">
+                Shop Verse
+              </h3>
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                A full-featured e-commerce platform for buying and selling
+                products, built with modern web technologies.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >Node.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >Express</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >MongoDB</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/mohamedmasodabozed/ShopVerse-"
+                  class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300"
+                >
+                  <i class="fa-solid fa-code"></i> Code
+                </a>
+                <a
+                  href="https://mohamedmasodabozed.github.io/Portfolio-/#"
+                  class="flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div
+            class="bg-gray-50 rounded-3xl shadow-lg border border-gray-200 overflow-hidden card-hover group"
+          >
+            <div
+              class="bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center h-56"
+            >
+              <img
+                src="./images/Screenshot 2025-09-10 213448.png"
+                alt="Quiz App"
+                class="object-contain h-full w-full p-4 group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-playfair font-bold text-xl mb-3 text-gray-800">
+                Quizzical
+              </h3>
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                A Quiz trivia App built React.js and tailwind CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >tailwind CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                  >React.js</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/mohamedmasodabozed/Quizzical"
+                  class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-gray-300 text-gray-700 font-medium hover:bg-purple-600 hover:text-white transition-all duration-300"
+                >
+                  <i class="fa-solid fa-code"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Skills Section -->
-  <!-- Redesigned skills with modern card layout and hover effects -->
-  <section id="skills" class="py-20 bg-white px-4">
-    <div class="container mx-auto max-w-6xl">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Technical Skills</h2>
-        <div class="section-divider w-24 mx-auto mb-6"></div>
-        <!-- Fixed contrast by using text-gray-600 -->
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Technologies and tools I use to bring ideas to life</p>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-solid fa-code text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <!-- Fixed contrast by using text-gray-700 -->
-          <span class="font-semibold text-sm md:text-base text-gray-700">C#</span>
+    <!-- Redesigned skills with modern card layout and hover effects -->
+    <section id="skills" class="py-20 bg-white px-4">
+      <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800"
+          >
+            Technical Skills
+          </h2>
+          <div class="section-divider w-24 mx-auto mb-6"></div>
+          <!-- Fixed contrast by using text-gray-600 -->
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Technologies and tools I use to bring ideas to life
+          </p>
         </div>
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-brands fa-python text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <span class="font-semibold text-sm md:text-base text-gray-700">Python</span>
-        </div>
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-solid fa-database text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <span class="font-semibold text-sm md:text-base text-gray-700">SQL</span>
-        </div>
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-brands fa-js text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <span class="font-semibold text-sm md:text-base text-gray-700">JavaScript</span>
-        </div>
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-brands fa-html5 text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <span class="font-semibold text-sm md:text-base text-gray-700">HTML/CSS</span>
-        </div>
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-brands fa-react text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <span class="font-semibold text-sm md:text-base text-gray-700">React.js</span>
-        </div>
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-brands fa-node-js text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <span class="font-semibold text-sm md:text-base text-gray-700">Node.js</span>
-        </div>
-        <div class="skill-card rounded-2xl p-6 text-center border border-gray-200">
-          <i class="fa-solid fa-server text-4xl md:text-5xl mb-4 text-purple-600"></i>
-          <span class="font-semibold text-sm md:text-base text-gray-700">Express.js</span>
-        </div>
-      </div>
-    </div>
-  </section>
-   <!-- Expertise Section -->
-  <!-- Enhanced services section with modern card design -->
-  <section id="expertise" class="py-20 gradient-bg px-4">
-    <div class="container mx-auto max-w-6xl">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">What I Do</h2>
-        <div class="section-divider w-24 mx-auto mb-6"></div>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Specialized services to help bring your vision to life</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-gray-200 group">
-          <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300">
-            <i class="fa-solid fa-laptop-code text-2xl text-purple-600"></i>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-solid fa-code text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <!-- Fixed contrast by using text-gray-700 -->
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >C#</span
+            >
           </div>
-          <h3 class="font-playfair font-bold text-2xl mb-4 text-gray-800">Fullstack Web Development</h3>
-          <p class="text-gray-700 leading-relaxed">Crafting modern, scalable web applications using the latest technologies and frameworks for seamless user experiences.</p>
-        </div>
-        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-gray-200 group">
-          <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300">
-            <i class="fa-solid fa-brain text-2xl text-purple-600"></i>
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-brands fa-python text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >Python</span
+            >
           </div>
-          <h3 class="font-playfair font-bold text-2xl mb-4 text-gray-800">AI & Machine Learning</h3>
-          <p class="text-gray-700 leading-relaxed">Building intelligent solutions with machine learning, deep learning, and data science to solve real-world problems.</p>
-        </div>
-        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-gray-200 group">
-          <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300">
-            <i class="fa-solid fa-database text-2xl text-purple-600"></i>
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-solid fa-database text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >SQL</span
+            >
           </div>
-          <h3 class="font-playfair font-bold text-2xl mb-4 text-gray-800">APIs & Databases</h3>
-          <p class="text-gray-700 leading-relaxed">Designing robust databases and developing secure, high-performance RESTful APIs for scalable applications.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Contact Section -->
-  <!-- Enhanced contact section with modern form design -->
-  <section id="contact" class="py-20 bg-white px-4">
-    <div class="container mx-auto max-w-4xl">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800">Contact Me</h2>
-        <div class="section-divider w-24 mx-auto mb-6"></div>
-        <p class="text-lg text-gray-600">Let's discuss your next project</p>
-      </div>
-      
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Contact Form -->
-        <div class="bg-gray-50 rounded-3xl p-8 shadow-lg border border-gray-200">
-          <form class="space-y-6" id="contactForm">
-            <div>
-              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name *</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300" required>
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
-              <input type="email" id="email" name="email" placeholder="your.email@example.com" class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300" required>
-            </div>
-            <div>
-              <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="What's this about?" class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300">
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
-              <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="w-full bg-purple-600 text-white p-4 rounded-xl shadow-lg hover:bg-purple-700 hover:shadow-xl transition-all duration-300 font-semibold text-lg">
-              <span id="submitText">Send Message</span>
-              <span id="submitLoading" class="hidden">Sending...</span>
-            </button>
-            <div id="formMessage" class="hidden mt-4 p-3 rounded-xl text-center"></div>
-          </form>
-        </div>
-        
-        <!-- Contact Info -->
-        <div class="space-y-8">
-          <div class="bg-gray-50 rounded-3xl p-8 shadow-lg border border-gray-200">
-            <h3 class="font-playfair font-bold text-2xl mb-6 text-gray-800">Get In Touch</h3>
-            <p class="text-gray-700 mb-8 leading-relaxed">Ready to start your next project? I'd love to hear from you. Let's create something amazing together.</p>
-            
-            <div class="space-y-6">
-              <a href="mailto:mohamedmasodabozed@email.com" class="flex items-center space-x-4 text-gray-700 hover:text-purple-600 transition-colors duration-300 group">
-                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
-                  <i class="fa-solid fa-envelope text-purple-600"></i>
-                </div>
-                <div>
-                  <p class="font-semibold">Email</p>
-                  <p class="text-sm text-gray-600">mohamedmasodabozed@email.com</p>
-                </div>
-              </a>
-              
-              <a href="https://www.linkedin.com/in/mohamed-masod-abozed-3591842a5/" target="_blank" class="flex items-center space-x-4 text-gray-700 hover:text-purple-600 transition-colors duration-300 group">
-                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
-                  <i class="fa-brands fa-linkedin text-purple-600"></i>
-                </div>
-                <div>
-                  <p class="font-semibold">LinkedIn</p>
-                  <p class="text-sm text-gray-600">Connect with me</p>
-                </div>
-              </a>
-              
-              <a href="https://github.com/mohamedmasodabozed" target="_blank" class="flex items-center space-x-4 text-gray-700 hover:text-purple-600 transition-colors duration-300 group">
-                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
-                  <i class="fa-brands fa-github text-purple-600"></i>
-                </div>
-                <div>
-                  <p class="font-semibold">GitHub</p>
-                  <p class="text-sm text-gray-600">View my repositories</p>
-                </div>
-              </a>
-            </div>
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-brands fa-js text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >JavaScript</span
+            >
+          </div>
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-brands fa-html5 text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >HTML/CSS</span
+            >
+          </div>
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-brands fa-react text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >React.js</span
+            >
+          </div>
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-brands fa-node-js text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >Node.js</span
+            >
+          </div>
+          <div
+            class="skill-card rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <i
+              class="fa-solid fa-server text-4xl md:text-5xl mb-4 text-purple-600"
+            ></i>
+            <span class="font-semibold text-sm md:text-base text-gray-700"
+              >Express.js</span
+            >
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- Expertise Section -->
+    <!-- Enhanced services section with modern card design -->
+    <section id="expertise" class="py-20 gradient-bg px-4">
+      <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800"
+          >
+            What I Do
+          </h2>
+          <div class="section-divider w-24 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Specialized services to help bring your vision to life
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-gray-200 group"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300"
+            >
+              <i class="fa-solid fa-laptop-code text-2xl text-purple-600"></i>
+            </div>
+            <h3 class="font-playfair font-bold text-2xl mb-4 text-gray-800">
+              Fullstack Web Development
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Crafting modern, scalable web applications using the latest
+              technologies and frameworks for seamless user experiences.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-gray-200 group"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300"
+            >
+              <i class="fa-solid fa-brain text-2xl text-purple-600"></i>
+            </div>
+            <h3 class="font-playfair font-bold text-2xl mb-4 text-gray-800">
+              AI & Machine Learning
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Building intelligent solutions with machine learning, deep
+              learning, and data science to solve real-world problems.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-3xl shadow-lg card-hover border border-gray-200 group"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors duration-300"
+            >
+              <i class="fa-solid fa-database text-2xl text-purple-600"></i>
+            </div>
+            <h3 class="font-playfair font-bold text-2xl mb-4 text-gray-800">
+              APIs & Databases
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Designing robust databases and developing secure, high-performance
+              RESTful APIs for scalable applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <!-- Enhanced contact section with modern form design -->
+    <section id="contact" class="py-20 bg-white px-4">
+      <div class="container mx-auto max-w-4xl">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-playfair font-bold mb-4 text-gray-800"
+          >
+            Contact Me
+          </h2>
+          <div class="section-divider w-24 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600">Let's discuss your next project</p>
+        </div>
 
-  <!-- Footer -->
-  <!-- Enhanced footer with modern styling -->
-  <footer class="py-8 text-center text-gray-600 bg-gray-50 border-t border-gray-200">
-    <div class="container mx-auto px-4">
-      <p class="font-medium">&copy; 2024 Mohamed Masod Abozed. All rights reserved.</p>
-    </div>
-  </footer>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div
+            class="bg-gray-50 rounded-3xl p-8 shadow-lg border border-gray-200"
+          >
+            <form class="space-y-6" id="contactForm">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-semibold text-gray-700 mb-2"
+                  >Name *</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-semibold text-gray-700 mb-2"
+                  >Email *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-semibold text-gray-700 mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="What's this about?"
+                  class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-semibold text-gray-700 mb-2"
+                  >Message *</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project or inquiry..."
+                  class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-900 transition-all duration-300"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-purple-600 text-white p-4 rounded-xl shadow-lg hover:bg-purple-700 hover:shadow-xl transition-all duration-300 font-semibold text-lg"
+              >
+                <span id="submitText">Send Message</span>
+                <span id="submitLoading" class="hidden">Sending...</span>
+              </button>
+              <div
+                id="formMessage"
+                class="hidden mt-4 p-3 rounded-xl text-center"
+              ></div>
+            </form>
+          </div>
 
-  <script src="main.js"></script>
-</body>
+          <!-- Contact Info -->
+          <div class="space-y-8">
+            <div
+              class="bg-gray-50 rounded-3xl p-8 shadow-lg border border-gray-200"
+            >
+              <h3 class="font-playfair font-bold text-2xl mb-6 text-gray-800">
+                Get In Touch
+              </h3>
+              <p class="text-gray-700 mb-8 leading-relaxed">
+                Ready to start your next project? I'd love to hear from you.
+                Let's create something amazing together.
+              </p>
+
+              <div class="space-y-6">
+                <a
+                  href="mailto:mohamedmasodabozed@email.com"
+                  class="flex items-center space-x-4 text-gray-700 hover:text-purple-600 transition-colors duration-300 group"
+                >
+                  <div
+                    class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300"
+                  >
+                    <i class="fa-solid fa-envelope text-purple-600"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold">Email</p>
+                    <p class="text-sm text-gray-600">
+                      mohamedmasodabozed@email.com
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/mohamed-masod-abozed-3591842a5/"
+                  target="_blank"
+                  class="flex items-center space-x-4 text-gray-700 hover:text-purple-600 transition-colors duration-300 group"
+                >
+                  <div
+                    class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300"
+                  >
+                    <i class="fa-brands fa-linkedin text-purple-600"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold">LinkedIn</p>
+                    <p class="text-sm text-gray-600">Connect with me</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://github.com/mohamedmasodabozed"
+                  target="_blank"
+                  class="flex items-center space-x-4 text-gray-700 hover:text-purple-600 transition-colors duration-300 group"
+                >
+                  <div
+                    class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300"
+                  >
+                    <i class="fa-brands fa-github text-purple-600"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold">GitHub</p>
+                    <p class="text-sm text-gray-600">View my repositories</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Enhanced footer with modern styling -->
+    <footer
+      class="py-8 text-center text-gray-600 bg-gray-50 border-t border-gray-200"
+    >
+      <div class="container mx-auto px-4">
+        <p class="font-medium">
+          &copy; 2024 Mohamed Masod Abozed. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
