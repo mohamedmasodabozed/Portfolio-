@@ -7,68 +7,69 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body class="bg-gray-50 text-gray-900 scroll-smooth">
   <!-- Navbar -->
   <header class="fixed w-full bg-white shadow z-50">
     <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-6">
-      <div class="text-2xl md:text-2xl font-bold mb-2 md:mb-0">mohamed masod abozed</div>
+      <div class="text-2xl md:text-2xl font-extrabold mb-2 md:mb-0 text-blue-700 tracking-wide">mohamed masod abozed</div>
       <ul class="hidden md:flex flex-row space-x-6 w-full md:w-auto items-center">
-        <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
-        <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
-        <li><a href="#expertise" class="hover:text-blue-600 transition">Expertise</a></li>
-        <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
-        <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
-        <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+        <li><a href="#home" class="px-3 py-1 rounded-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium">Home</a></li>
+        <li><a href="#skills" class="px-3 py-1 rounded-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium">Skills</a></li>
+        <li><a href="#expertise" class="px-3 py-1 rounded-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium">Expertise</a></li>
+        <li><a href="#projects" class="px-3 py-1 rounded-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium">Projects</a></li>
+        <li><a href="#about" class="px-3 py-1 rounded-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium">About</a></li>
+        <li><a href="#contact" class="px-3 py-1 rounded-lg hover:bg-blue-100 hover:text-blue-700 transition duration-200 font-medium">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home" class="pt-32 pb-10 flex flex-col items-center bg-gradient-to-b from-blue-100 to-white px-4">
-    <img src="DSC002711.JPG" alt="Profile Photo" class="w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg mb-4 object-cover">
-    <h1 class="text-2xl md:text-4xl font-extrabold mb-2 text-center">mohamed masod abozed</h1>
-    <h2 class="text-lg md:text-xl text-blue-600 font-semibold mb-4 text-center">Software Engineer & AI Enthusiast</h2>
-    <p class="max-w-xl text-center text-gray-600 text-base md:text-lg">Building modern web applications and exploring the world of artificial intelligence.</p>
-  <a href="mohamed%20masod%20abozed%20-%20Fullstack%20developer%20Resume%20(1).pdf" download class="mt-6 px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition w-full max-w-xs text-center">Download Resume</a>
+  <img src="DSC002711.JPG" alt="Profile Photo" class="w-28 h-28 md:w-40 md:h-40 rounded-full shadow-2xl mb-6 object-cover border-4 border-blue-100 hover:scale-105 transition-transform duration-300">
+  <h1 class="text-3xl md:text-5xl font-extrabold mb-2 text-center text-blue-700 tracking-wide">mohamed masod abozed</h1>
+  <h2 class="text-lg md:text-2xl text-blue-600 font-semibold mb-4 text-center">Software Engineer & AI Enthusiast</h2>
+  <p class="max-w-xl text-center text-gray-700 text-base md:text-lg mb-2">Building modern web applications and exploring the world of artificial intelligence.</p>
+  <a href="mohamed%20masod%20abozed%20-%20Fullstack%20developer%20Resume%20(1).pdf" download class="mt-6 px-8 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300 w-full max-w-xs text-center font-bold">Download Resume</a>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" class="py-10 bg-white px-4">
     <div class="container mx-auto">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Skills</h2>
-      <div class="flex flex-wrap justify-center gap-6">
+  <h2 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-blue-700 tracking-wide">Skills</h2>
+  <div class="flex flex-wrap justify-center gap-8">
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">#</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">C#</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-solid fa-code"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">C#</span>
         </div>
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">🐍</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">Python</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-brands fa-python"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">Python</span>
         </div>
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">🗄️</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">SQL</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-solid fa-database"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">SQL</span>
         </div>
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">🟨</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">JavaScript</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-brands fa-js"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">JavaScript</span>
         </div>
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">�</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">HTML/CSS</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">HTML/CSS</span>
         </div>
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">⚛️</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">React.js</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-brands fa-react"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">React.js</span>
         </div>
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">�</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">Node.js</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-brands fa-node-js"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">Node.js</span>
         </div>
         <div class="flex flex-col items-center bg-white rounded shadow p-4 w-24 md:w-32">
-          <span class="text-3xl md:text-5xl">🚂</span>
-          <span class="mt-2 font-semibold text-sm md:text-base">Express.js</span>
+          <span class="text-4xl md:text-5xl mb-2 transition-colors duration-300 group-hover:text-blue-600"><i class="fa-solid fa-server"></i></span>
+          <span class="mt-3 font-bold text-base md:text-lg text-gray-800">Express.js</span>
         </div>
       </div>
     </div>
@@ -79,20 +80,20 @@
     <div class="container mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">What I Do</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded shadow text-center">
-          <span class="text-3xl md:text-4xl mb-2 inline-block">🌍</span>
-          <h3 class="font-semibold text-lg md:text-xl mb-2">Web Development</h3>
-          <p class="text-sm md:text-base">Building responsive, modern web applications with clean code and great UX.</p>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl group border border-blue-100">
+          <span class="text-4xl md:text-5xl mb-4 inline-block transition-colors duration-300 group-hover:text-blue-600"><i class="fa-solid fa-laptop-code"></i></span>
+          <h3 class="font-bold text-xl md:text-2xl mb-3 text-gray-800">Fullstack Web Development</h3>
+          <p class="text-base md:text-lg text-gray-600">Crafting modern, scalable web applications using the latest technologies and frameworks for seamless user experiences.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow text-center">
-          <span class="text-3xl md:text-4xl mb-2 inline-block">🤖</span>
-          <h3 class="font-semibold text-lg md:text-xl mb-2">Machine Learning</h3>
-          <p class="text-sm md:text-base">Designing and training models for data-driven solutions and intelligent systems.</p>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl group border border-blue-100">
+          <span class="text-4xl md:text-5xl mb-4 inline-block transition-colors duration-300 group-hover:text-blue-600"><i class="fa-solid fa-brain"></i></span>
+          <h3 class="font-bold text-xl md:text-2xl mb-3 text-gray-800">AI & Machine Learning</h3>
+          <p class="text-base md:text-lg text-gray-600">Building intelligent solutions with machine learning, deep learning, and data science to solve real-world problems.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow text-center">
-          <span class="text-3xl md:text-4xl mb-2 inline-block">🗃️</span>
-          <h3 class="font-semibold text-lg md:text-xl mb-2">Databases & APIs</h3>
-          <p class="text-sm md:text-base">Designing robust databases and building RESTful APIs for scalable applications.</p>
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl group border border-blue-100">
+          <span class="text-4xl md:text-5xl mb-4 inline-block transition-colors duration-300 group-hover:text-blue-600"><i class="fa-solid fa-database"></i></span>
+          <h3 class="font-bold text-xl md:text-2xl mb-3 text-gray-800">APIs & Databases</h3>
+          <p class="text-base md:text-lg text-gray-600">Designing robust databases and developing secure, high-performance RESTful APIs for scalable applications.</p>
         </div>
       </div>
     </div>
@@ -101,38 +102,38 @@
   <!-- Projects Section -->
   <section id="projects" class="py-10 bg-white px-4">
     <div class="container mx-auto">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <h2 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-blue-700 tracking-wide">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <!-- Project 1 -->
-        <div class="bg-gray-50 p-6 rounded shadow">
-          <h3 class="font-semibold text-lg md:text-xl mb-2">Job Finder website</h3>
-          <p class="mb-2 text-sm md:text-base">A job finder website that allows users to search for jobs and apply to them and it is directed to help people with disabilities, built with Python and Django.</p>
-          <div class="mb-2 text-xs md:text-sm text-gray-600">Technologies: Python, js, Django</div>
-          <a href="https://github.com/MohamedElsadany56/JobFinder" class="text-blue-600 hover:underline mr-4">GitHub</a>
-          <a href="https://elsadany.pythonanywhere.com/" class="text-blue-600 hover:underline">Demo</a>
+  <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100">
+          <h3 class="font-bold text-xl md:text-2xl mb-3 text-gray-800">Job Finder website</h3>
+          <p class="mb-3 text-base md:text-lg text-gray-700">A job finder website that allows users to search for jobs and apply to them and it is directed to help people with disabilities, built with Python and Django.</p>
+          <div class="mb-3 text-xs md:text-sm text-gray-500">Technologies: Python, js, Django</div>
+          <a href="https://github.com/MohamedElsadany56/JobFinder" class="inline-block px-4 py-2 mr-2 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition duration-200">GitHub</a>
+          <a href="https://elsadany.pythonanywhere.com/" class="inline-block px-4 py-2 rounded-lg bg-green-500 text-white font-semibold shadow hover:bg-green-600 transition duration-200">Demo</a>
         </div>
         <!-- Project 2 -->
-        <div class="bg-gray-50 p-6 rounded shadow">
-          <h3 class="font-semibold text-lg md:text-xl mb-2">Portfolio Website</h3>
-          <p class="mb-2 text-sm md:text-base">A personal portfolio website to showcase my work and skills, built with React and Tailwind CSS.</p>
-          <div class="mb-2 text-xs md:text-sm text-gray-600">Technologies: React, Tailwind CSS</div>
-          <a href="https://github.com/mohamedmasodabozed/Portfolio-" class="text-blue-600 hover:underline mr-4">GitHub</a>
-          <a href="https://mohamedmasodabozed.github.io/Portfolio-/#" class="text-blue-600 hover:underline">Demo</a>
+  <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100">
+          <h3 class="font-bold text-xl md:text-2xl mb-3 text-gray-800">Portfolio Website</h3>
+          <p class="mb-3 text-base md:text-lg text-gray-700">A personal portfolio website to showcase my work and skills, built with React and Tailwind CSS.</p>
+          <div class="mb-3 text-xs md:text-sm text-gray-500">Technologies: React, Tailwind CSS</div>
+          <a href="https://github.com/mohamedmasodabozed/Portfolio-" class="inline-block px-4 py-2 mr-2 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition duration-200">GitHub</a>
+          <a href="https://mohamedmasodabozed.github.io/Portfolio-/#" class="inline-block px-4 py-2 rounded-lg bg-green-500 text-white font-semibold shadow hover:bg-green-600 transition duration-200">Demo</a>
         </div>
         <!-- Project 3  -->
-        <div class="bg-gray-50 p-6 rounded shadow">
+  <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100">
           <h3 class="font-semibold text-lg md:text-xl mb-2">shop Verse</h3>
           <p class="mb-2 text-sm md:text-base">An e-commerce platform for buying and selling products, built with Node.js and Express.</p>
           <div class="mb-2 text-xs md:text-sm text-gray-600">Technologies:React.js, Node.js, Express, MongoDB</div>
-          <a href="https://github.com/mohamedmasodabozed/ShopVerse-" class="text-blue-600 hover:underline mr-4">GitHub</a>
+          <a href="https://github.com/mohamedmasodabozed/ShopVerse-" class="inline-block px-4 py-2 mr-2 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition duration-200">GitHub</a>
           <!--<a href="https://shop-verse.herokuapp.com/" class="text-blue-600 hover:underline">Demo</a>-->
         </div>
         <!-- Project 4 -->
-        <div class="bg-gray-50 p-6 rounded shadow">
+  <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100">
           <h3 class="font-semibold text-lg md:text-xl mb-2">process limiter XV6-OS</h3>
           <p class="mb-2 text-sm md:text-base">A process limiter for the XV6 operating system, built with C.</p>
           <div class="mb-2 text-xs md:text-sm text-gray-600">Technologies: C, XV6</div>
-          <a href="https://github.com/mahmoud2289/Process-Limiter-Xv6-OS" class="text-blue-600 hover:underline mr-4">GitHub</a>
+          <a href="https://github.com/mahmoud2289/Process-Limiter-Xv6-OS" class="inline-block px-4 py-2 mr-2 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition duration-200">GitHub</a>
           <!--<a href="https://restaurant-management.herokuapp.com/" class="text-blue-600 hover:underline">Demo</a>-->
         </div>
       </div>
@@ -142,15 +143,15 @@
   <!-- About Section -->
   <section id="about" class="py-10 bg-gray-100 px-4">
     <div class="container mx-auto max-w-2xl">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">About Me</h2>
-      <p class="text-base md:text-lg text-center">I'm mohamed masod abozed, a passionate software engineer with a background in computer science. I love building impactful software, learning new technologies, and solving real-world problems. My interests include web development, AI, and open-source projects.</p>
+  <h2 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-blue-700 tracking-wide">About Me</h2>
+  <p class="text-lg md:text-xl text-center text-gray-700 leading-relaxed">I'm <span class="font-bold text-blue-700">mohamed masod abozed</span>, a passionate software engineer with a solid background in computer science. I specialize in building impactful, high-performance software that helps businesses accelerate digital growth. My focus is on delivering fast, reliable, and future-ready applications—developed with clean architecture, responsiveness, and maintainability to ensure long-term success. Beyond just coding, I thrive on solving real-world problems and continuously learning new technologies to bring innovation and measurable value to every project.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-10 bg-white px-4">
     <div class="container mx-auto max-w-xl">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Contact Me</h2>
+  <h2 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-blue-700 tracking-wide">Contact Me</h2>
       <form class="space-y-4" id="contactForm">
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
@@ -168,7 +169,7 @@
           <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
           <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base" rows="5" required></textarea>
         </div>
-        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 transition duration-300 text-sm md:text-base font-medium">
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white p-3 rounded-xl shadow-lg hover:from-blue-600 hover:to-blue-800 hover:scale-105 transition-all duration-300 text-base md:text-lg font-bold">
           <span id="submitText">Send Message</span>
           <span id="submitLoading" class="hidden">Sending...</span>
         </button>
@@ -176,7 +177,7 @@
       </form>
       
       <div class="mt-8 text-center">
-        <p class="text-gray-600 mb-4">Or reach out directly:</p>
+  <p class="text-gray-600 mb-4 text-lg">Or reach out directly:</p>
         <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
           <a href="mailto:mohamedmasodabozed@email.com" class="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition" title="Email">
             <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5"><path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zm16 2.236l-7.071 7.071a1 1 0 01-1.414 0L4 6.236V20h16V6.236z"/></svg>
